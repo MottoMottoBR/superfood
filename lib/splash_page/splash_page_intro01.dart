@@ -1,0 +1,58 @@
+import 'dart:ffi';
+
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import '../styles_patterns/app_colors.dart';
+
+class SplashPage01 extends StatelessWidget {
+  const SplashPage01({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.whiteBackground,
+      body: Padding(
+        padding: const EdgeInsets.all(30.0),
+        child: Column(
+          children: [
+            const SizedBox(height: 40 ,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text(
+                  'Skip',
+                  style: GoogleFonts.poppins(
+                      color: AppColors.yellow,
+                      fontSize: 13,
+                      fontWeight: FontWeight.normal),
+                ),
+              ],
+            ),
+            const SizedBox(height: 90),
+            Image.asset('lib/assets/imagens/intro1.png'),
+            const SizedBox(height: 80),
+            Text(
+              'Trending Foods',
+              style: GoogleFonts.poppins(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.black),
+            ),
+            const SizedBox(height: 30),
+            ConstrainedBox(
+              constraints: const BoxConstraints(
+                maxWidth: 350,
+              ),
+              child: Text(
+                'Lorem ipsum dolor sit amet consectetur. Ut cras pellentesque diam mauris laoreet donec a eget aliquam. ',
+                style: GoogleFonts.poppins(color: AppColors.black),
+                textAlign: TextAlign.center,
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
