@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../custom_buttom/buttom_yellow.dart';
 import '../styles_patterns/app_colors.dart';
 
 class RegisterScreen extends StatelessWidget {
@@ -46,19 +47,7 @@ class RegisterScreen extends StatelessWidget {
                 print('Botao Criar Conta foi pressionado');
               }
             },
-            child: Container(
-              alignment: Alignment.center,
-              width: 380,
-              height: 50,
-              decoration: const BoxDecoration(
-                  color: AppColors.yellow,
-                  borderRadius: BorderRadius.all(Radius.circular(35))),
-              child: Text(
-                'Create account',
-                style: GoogleFonts.poppins(
-                    fontSize: 17, fontWeight: FontWeight.w800),
-              ),
-            ),
+            child: const ButtomYellow(text: 'Create account',)
           ),
           const SizedBox(height: 10),
 

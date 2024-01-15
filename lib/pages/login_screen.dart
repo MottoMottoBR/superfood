@@ -1,4 +1,8 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:superfood/custom_buttom/buttom_yellow.dart';
 import 'package:superfood/styles_patterns/text_styles.dart';
 
 import '../widget/custom_text_field.dart';
@@ -49,8 +53,63 @@ class _LoginScreenState extends State<LoginScreen> {
               const PassWordTextField(
                 labelText: 'Password',
               ),
+              const SizedBox(
+                height: 15,
+              ),
 
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  InkWell(
+                    onTap: () {},
+                    child: Text(
+                      'Forget Password?',
+                      style: GoogleFonts.poppins(
+                          fontSize: 15, fontWeight: FontWeight.normal),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
               // Botao Login
+              InkWell(
+                onTap: () {
+                  log('Pressionado');
+                },
+                child: const ButtomYellow(
+                  text: 'Login',
+                ),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    color: Colors.black,
+                    height: 1,
+                    width: 180,
+                  ),
+                  Text(
+                    'OR',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 15,
+                    ),
+                  ),
+                  Container(
+                    color: Colors.black,
+                    height: 1,
+                    width: 180,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 30,
+              ),
 
               // logo com Redes Social
 
