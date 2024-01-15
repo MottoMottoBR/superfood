@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:superfood/assets/text_styles/text_styles.dart';
+import 'package:superfood/styles_patterns/text_styles.dart';
+
+import '../widget/custom_text_field.dart';
 
 class LoginScreen extends StatefulWidget {
-  LoginScreen({
+  const LoginScreen({
     super.key,
   });
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
-  final TextEditingController _emailController = TextEditingController();
-  final TextEditingController _senhaController = TextEditingController();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
@@ -34,7 +34,14 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 20),
 
               // Campo de E-mail
-              custonTextFormField(),
+              const CustomTextField(
+                hintText: 'Email',
+                labelText: 'email@email.com',
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+
 
               // Campo de Senha
 
@@ -46,21 +53,6 @@ class _LoginScreenState extends State<LoginScreen> {
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  TextFormField custonTextFormField() {
-    return TextFormField(
-      decoration: const InputDecoration(
-        labelText: 'E-mail',
-        border: OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(120))),
-        focusedBorder: OutlineInputBorder(),
-        errorBorder: OutlineInputBorder(),
-        focusedErrorBorder: OutlineInputBorder(),
-        enabledBorder: OutlineInputBorder(),
-        disabledBorder: OutlineInputBorder(),
       ),
     );
   }

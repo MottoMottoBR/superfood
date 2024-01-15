@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../styles_patterns/app_colors.dart';
+import 'app_colors.dart';
 
 class TextStilo {
   TextStilo._();

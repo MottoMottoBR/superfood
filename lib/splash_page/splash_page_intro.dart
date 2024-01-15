@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:superfood/assets/text_styles/text_styles.dart';
+import 'package:superfood/styles_patterns/text_styles.dart';
 import 'package:superfood/styles_patterns/app_colors.dart';
 
 
