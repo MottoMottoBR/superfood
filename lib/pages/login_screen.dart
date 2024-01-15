@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -6,6 +7,8 @@ import 'package:superfood/custom_buttom/buttom_yellow.dart';
 import 'package:superfood/styles_patterns/text_styles.dart';
 
 import '../custom_buttom/buttom_transparente.dart';
+import '../custom_buttom/buttom_transparente_facebook.dart';
+import '../custom_buttom/buttom_transparente_google.dart';
 import '../widget/custom_text_field.dart';
 import '../widget/password_text_field.dart';
 
@@ -31,15 +34,14 @@ class _LoginScreenState extends State<LoginScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Flexible(
-                flex: 2,
                 child: Container(),
               ),
               //Logo Imagem
               Image.asset('lib/assets/imagens/panela.png'),
-              const SizedBox(height: 5),
+              const SizedBox(height: 20),
               TextStilo.superFood,
 
-              const SizedBox(height: 20),
+              const SizedBox(height: 120),
 
               // Campo de E-mail
               const CustomTextField(
@@ -52,7 +54,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
               // Campo de Senha
               const PassWordTextField(
-                labelText: 'Password',
+                labelText: 'Password', hintText: 'Password',
+
               ),
               const SizedBox(
                 height: 15,
@@ -86,42 +89,74 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 30,
               ),
+
+              // Faixa Cetral Separando login por email de Logion com rede Social
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                    color: Colors.black,
-                    height: 1,
-                    width: 180,
+                  Flexible(
+                    child: Container(
+                      color: Colors.black,
+                      height: 1,
+                    ),
                   ),
                   Text(
-                    'OR',
+                    ' OR ',
                     style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w800,
                       fontSize: 15,
                     ),
                   ),
-                  Container(
-                    color: Colors.black,
-                    height: 1,
-                    width: 180,
+                  Flexible(
+                    child: Container(
+                      color: Colors.black,
+                      height: 1,
+                    ),
                   ),
                 ],
               ),
               const SizedBox(
                 height: 30,
               ),
-              const ButtomTranparente(Text: 'Login with Google',),
+
+              const ButtomTranparenteGoogle(
+                Text: 'Login with Google',
+
+              ),
 
               const SizedBox(
                 height: 15,
               ),
 
-              const ButtomTranparente(Text: 'Login with Facebook',),
+              const ButtomTranparenteFace(
+                Text: 'Login with Facebook',
+              ),
+              const SizedBox(
+                height: 80,
+              ),
 
-              // logo com Redes Social
+              // Texto Noa tenho Conta
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    ' Nao tem Conta? ',
+                    style: GoogleFonts.poppins(
+                        fontSize: 13, fontWeight: FontWeight.normal),
+                  ),
+                  Text(
+                    ' Sign up ',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 13,
+                    ),
+                  ),
+                ],
+              ),
 
-              // Nao tenho Conta
+              const SizedBox(
+                width: 30,
+              )
             ],
           ),
         ),

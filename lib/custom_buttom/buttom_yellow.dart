@@ -19,7 +19,6 @@ class _LoginButtomState extends State<ButtomYellow> {
     final String text;
     return Container(
       alignment: Alignment.center,
-      width: 380,
       height: 50,
       decoration: const BoxDecoration(
           color: AppColors.yellow,

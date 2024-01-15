@@ -17,6 +17,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return TextFormField(
       keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
+
         labelText: widget.labelText,
         hintText: widget.hintText,
         focusedBorder: defaultBorder,

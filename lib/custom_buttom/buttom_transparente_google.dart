@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ButtomTranparente extends StatefulWidget {
+class ButtomTranparenteGoogle extends StatefulWidget {
   final String Text;
-
-  const ButtomTranparente({super.key, required this.Text, });
+   
+  const ButtomTranparenteGoogle({super.key, required this.Text, });
 
   @override
-  State<ButtomTranparente> createState() => _ButtomTranparenteState();
+  State<ButtomTranparenteGoogle> createState() => _ButtomTranparenteState();
 }
 
-class _ButtomTranparenteState extends State<ButtomTranparente> {
-
+class _ButtomTranparenteState extends State<ButtomTranparenteGoogle> {
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -24,13 +24,14 @@ class _ButtomTranparenteState extends State<ButtomTranparente> {
             borderRadius: const BorderRadius.all(Radius.circular(35))),
         child: Row(
           children: [
-            const Row(
+           Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 100,
                 ),
-
+                Image.asset('lib/assets/imagens/icon_google.png')
+                
               ],
             ),
             Row(
