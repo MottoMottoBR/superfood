@@ -113,6 +113,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const ButtomTranparente(Text: 'Login with Google',),
 
+              const SizedBox(
+                height: 15,
+              ),
+
               const ButtomTranparente(Text: 'Login with Facebook',),
 
               // logo com Redes Social

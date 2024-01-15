@@ -1,13 +1,18 @@
-import 'dart:ffi';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../styles_patterns/app_colors.dart';
 
-class SplashPage01 extends StatelessWidget {
+class SplashPage01 extends StatefulWidget {
   const SplashPage01({super.key});
 
+  @override
+  State<SplashPage01> createState() => _SplashPage01State();
+}
+
+class _SplashPage01State extends State<SplashPage01> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +25,17 @@ class SplashPage01 extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Text(
-                  'Skip',
-                  style: GoogleFonts.poppins(
-                      color: AppColors.yellow,
-                      fontSize: 13,
-                      fontWeight: FontWeight.normal),
+                GestureDetector(
+                onTap: (){
+
+                },
+                  child: Text(
+                    'Skip',
+                    style: GoogleFonts.poppins(
+                        color: AppColors.yellow,
+                        fontSize: 13,
+                        fontWeight: FontWeight.normal),
+                  ),
                 ),
               ],
             ),

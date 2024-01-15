@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:superfood/splash_page/splash_page_intro.dart';
+import 'package:superfood/splash_page/splash_page_intro01.dart';
+import 'package:superfood/splash_page/splash_page_intro03.dart';
+import 'package:superfood/splash_page/splash_page_intro04.dart';
 import 'package:superfood/splash_page/welcome_screen.dart';
 
 import 'pages/login_screen.dart';
@@ -17,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: const  LoginScreen(),
+      home:   LoginScreen(),
     );
   }
 }
