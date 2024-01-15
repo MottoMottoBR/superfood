@@ -87,15 +87,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 30,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     color: Colors.black,
                     height: 1,
-                    width: 180,
+                    width: 150,
                   ),
                   Text(
-                    'OR',
+                    ' OR ',
                     style: GoogleFonts.poppins(
                       fontWeight: FontWeight.w500,
                       fontSize: 15,
