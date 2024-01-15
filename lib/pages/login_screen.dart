@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:superfood/styles_patterns/text_styles.dart';
 
 import '../widget/custom_text_field.dart';
+import '../widget/password_text_field.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({
@@ -13,6 +14,8 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  get isHidden => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,15 +38,17 @@ class _LoginScreenState extends State<LoginScreen> {
 
               // Campo de E-mail
               const CustomTextField(
-                hintText: 'Email',
-                labelText: 'email@email.com',
+                hintText: 'email@email.com',
+                labelText: 'Email',
               ),
               const SizedBox(
                 height: 15,
               ),
 
-
               // Campo de Senha
+              const PassWordTextField(
+                labelText: 'Password',
+              ),
 
               // Botao Login
 

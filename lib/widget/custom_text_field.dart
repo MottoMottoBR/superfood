@@ -4,7 +4,7 @@ class CustomTextField extends StatefulWidget {
   final String? hintText;
   final String? labelText;
   const CustomTextField(
-      {super.key, required this.hintText, required this.labelText});
+      {super.key,  required this.labelText, required this.hintText});
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
@@ -17,8 +17,8 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return TextFormField(
       keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
-        labelText: widget.hintText,
-        hintText: widget.labelText,
+        labelText: widget.labelText,
+        hintText: widget.hintText,
         focusedBorder: defaultBorder,
         errorBorder: defaultBorder,
         focusedErrorBorder: defaultBorder,
