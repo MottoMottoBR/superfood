@@ -68,6 +68,8 @@ flutter:
      - lib/assets/imagens/intro2.png
      - lib/assets/imagens/intro3.png
      - lib/assets/imagens/intro4.png
+     - lib/assets/imagens/icon_google.png
+     - lib/assets/imagens/icon_facebook.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:superfood/custom_buttom/buttom_yellow.dart';
 import 'package:superfood/styles_patterns/text_styles.dart';
 
+import '../custom_buttom/buttom_transparente.dart';
 import '../widget/custom_text_field.dart';
 import '../widget/password_text_field.dart';
 
@@ -110,6 +111,9 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 30,
               ),
+              const ButtomTranparente(Text: 'Login with Google',),
+
+              const ButtomTranparente(Text: 'Login with Facebook',),
 
               // logo com Redes Social
 
