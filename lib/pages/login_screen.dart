@@ -27,138 +27,135 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Flexible(
-                child: Container(),
-              ),
-              //Logo Imagem
-              Image.asset('lib/assets/imagens/panela.png'),
-              const SizedBox(height: 20),
-              TextStilo.superFood,
+      body: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Flexible(
+              child: Container(),
+            ),
+            //Logo Imagem
+            Image.asset('lib/assets/imagens/panela.png'),
+            const SizedBox(height: 20),
+            TextStilo.superFood,
 
-              const SizedBox(height: 120),
+            const SizedBox(height: 120),
 
-              // Campo de E-mail
-              const CustomTextField(
-                hintText: 'email@email.com',
-                labelText: 'Email',
-              ),
-              const SizedBox(
-                height: 15,
-              ),
+            // Campo de E-mail
+            const CustomTextField(
+              hintText: 'email@email.com',
+              labelText: 'Email',
+            ),
+            const SizedBox(
+              height: 15,
+            ),
 
-              // Campo de Senha
-              const PassWordTextField(
-                labelText: 'Password', hintText: 'Password',
+            // Campo de Senha
+            const PassWordTextField(
+              labelText: 'Password',
+              hintText: 'Password',
+            ),
+            const SizedBox(
+              height: 15,
+            ),
 
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  InkWell(
-                    onTap: () {},
-                    child: Text(
-                      'Forget Password?',
-                      style: GoogleFonts.poppins(
-                          fontSize: 15, fontWeight: FontWeight.normal),
-                    ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                InkWell(
+                  onTap: () {},
+                  child: Text(
+                    'Forget Password?',
+                    style: GoogleFonts.poppins(
+                        fontSize: 15, fontWeight: FontWeight.normal),
                   ),
-                ],
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              // Botao Login
-              InkWell(
-                onTap: () {
-                  log('Pressionado');
-                },
-                child: const ButtomYellow(
-                  text: 'Login',
                 ),
+              ],
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            // Botao Login
+            InkWell(
+              onTap: () {
+                log('Pressionado');
+              },
+              child: const ButtomYellow(
+                text: 'Login',
               ),
-              const SizedBox(
-                height: 30,
-              ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
 
-              // Faixa Cetral Separando login por email de Logion com rede Social
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Flexible(
-                    child: Container(
-                      color: Colors.black,
-                      height: 1,
-                    ),
+            // Faixa Cetral Separando login por email de Logion com rede Social
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Flexible(
+                  child: Container(
+                    color: Colors.black,
+                    height: 1,
                   ),
-                  Text(
-                    ' OR ',
-                    style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.w800,
-                      fontSize: 15,
-                    ),
+                ),
+                Text(
+                  ' OR ',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w800,
+                    fontSize: 15,
                   ),
-                  Flexible(
-                    child: Container(
-                      color: Colors.black,
-                      height: 1,
-                    ),
+                ),
+                Flexible(
+                  child: Container(
+                    color: Colors.black,
+                    height: 1,
                   ),
-                ],
-              ),
-              const SizedBox(
-                height: 30,
-              ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
 
-              const ButtomTranparenteGoogle(
-                Text: 'Login with Google',
+            const ButtomTranparenteGoogle(
+              Text: 'Login with Google',
+            ),
 
-              ),
+            const SizedBox(
+              height: 15,
+            ),
 
-              const SizedBox(
-                height: 15,
-              ),
+            const ButtomTranparenteFace(
+              Text: 'Login with Facebook',
+            ),
+            const SizedBox(
+              height: 80,
+            ),
 
-              const ButtomTranparenteFace(
-                Text: 'Login with Facebook',
-              ),
-              const SizedBox(
-                height: 80,
-              ),
-
-              // Texto Noa tenho Conta
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    ' Nao tem Conta? ',
-                    style: GoogleFonts.poppins(
-                        fontSize: 13, fontWeight: FontWeight.normal),
+            // Texto Noa tenho Conta
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  ' Nao tem Conta? ',
+                  style: GoogleFonts.poppins(
+                      fontSize: 13, fontWeight: FontWeight.normal),
+                ),
+                Text(
+                  ' Sign up ',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 13,
                   ),
-                  Text(
-                    ' Sign up ',
-                    style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 13,
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              ],
+            ),
 
-              const SizedBox(
-                width: 30,
-              )
-            ],
-          ),
+            const SizedBox(
+              width: 30,
+            )
+          ],
         ),
       ),
     );

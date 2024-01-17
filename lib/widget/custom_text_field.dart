@@ -11,7 +11,9 @@ class CustomTextField extends StatefulWidget {
 }
 
 class _CustomTextFieldState extends State<CustomTextField> {
-  final defaultBorder = const OutlineInputBorder();
+  final defaultBorder =  OutlineInputBorder(
+    borderRadius: BorderRadius.circular(100.0)
+  );
   @override
   Widget build(BuildContext context) {
     return TextFormField(

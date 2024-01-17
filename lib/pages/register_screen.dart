@@ -22,83 +22,84 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(12),
-        child: Column(
-          children: [
-            Flexible( flex: 2,
-                child: Container()),
-            Image.asset('lib/assets/imagens/panela.png'),
-            const SizedBox(height: 12),
-            TextStilo.superFood,
-            const SizedBox(height: 40),
-            const CustomTextField(
-              labelText: 'Email',
-              hintText: 'email@email.com',
-            ),
-            const SizedBox(height: 20),
-            const PassWordTextField(
-              labelText: 'Password',
-            ),
-            const SizedBox(height: 20),
-            const PassWordTextField(
-              labelText: 'Password',
-            ),
-            const SizedBox(height: 40),
-            const ButtomYellow(
-              text: 'Sign up',
-            ),
-            const SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Flexible(
-                  child: Container(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Image.asset('lib/assets/imagens/panela.png'),
+              const SizedBox(height: 12),
+              TextStilo.superFood,
+              const SizedBox(height: 40),
+              const CustomTextField(
+                labelText: 'Email',
+                hintText: 'email@email.com',
+              ),
+              const SizedBox(height: 20),
+              const PassWordTextField(
+                labelText: 'Password',
+              ),
+              const SizedBox(height: 20),
+              const PassWordTextField(
+                labelText: 'Confirm Password',
+              ),
+              const SizedBox(height: 40),
+              const ButtomYellow(
+                text: 'Sign up',
+              ),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
                     color: Colors.black,
                     height: 1,
+                    width: 140,
                   ),
-                ),
-                Text(
-                  '     OR    ',
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w800,
-                    fontSize: 15,
+                  Text(
+                    'OR',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 15,
+                    ),
                   ),
-                ),
-                Flexible(
-                  child: Container(
+                  Container(
                     color: Colors.black,
                     height: 1,
+                    width: 140,
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 30),
-            const ButtomTranparenteGoogle(
-              Text: 'Sign Up with Google',
-            ),
-            const SizedBox(
-              height: 15,
-            ),
-            const ButtomTranparenteFace(
-              Text: 'Sign Up with Facebook',
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'Already have an account?',
-                  style: GoogleFonts.poppins(fontSize: 13),
-                ),
-                Text(
-                  ' Log in',
-                  style: GoogleFonts.poppins(
-                      fontSize: 13, fontWeight: FontWeight.bold),
-                ),
-              ],
-            )
-          ],
+                ],
+              ),
+              const SizedBox(height: 30),
+              const ButtomTranparenteGoogle(
+                Text: 'Sign Up with Google',
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const ButtomTranparenteFace(
+                Text: 'Sign Up with Facebook',
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Already have an account?',
+                    style: GoogleFonts.poppins(
+                      fontSize: 13,
+                    ),
+                  ),
+                  Text(
+                    ' Log in',
+                    style: GoogleFonts.poppins(
+                        fontSize: 13, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 100),
+            ],
+          ),
         ),
       ),
     );

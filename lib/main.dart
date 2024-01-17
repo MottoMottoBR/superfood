@@ -6,7 +6,6 @@ import 'package:superfood/splash_page/splash_page_intro02.dart';
 import 'package:superfood/splash_page/splash_page_intro03.dart';
 import 'package:superfood/splash_page/splash_page_intro04.dart';
 import 'package:superfood/splash_page/welcome_screen.dart';
-
 import 'pages/login_screen.dart';
 
 void main() {

@@ -21,36 +21,34 @@ class PassWordTextField extends StatefulWidget {
 }
 
 class _PassWordTextFieldState extends State<PassWordTextField> {
-  final defautlBorder = const OutlineInputBorder();
+  final defautlBorder =  OutlineInputBorder( borderRadius: BorderRadius.circular(100.0));
 
   bool isHidden = true;
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      child: TextFormField(
-        obscureText: isHidden,
-        keyboardType: TextInputType.visiblePassword,
-        decoration: InputDecoration(
-          labelText: widget.labelText,
-          hintText: widget.hintText,
-          focusedBorder: defautlBorder,
-          errorBorder: defautlBorder,
-          focusedErrorBorder: defautlBorder,
-          enabledBorder: defautlBorder,
-          disabledBorder: defautlBorder,
-          suffixIcon: Padding(
-            padding: const EdgeInsetsDirectional.only(end: 16.0),
-            child: InkWell(
-              borderRadius: BorderRadius.circular(23.0),
-              onTap: () {
-                log('Pressionado');
-                setState(() {
-                  isHidden = !isHidden;
-                });
-              },
-              child: Icon(isHidden ? Icons.visibility_off : Icons.visibility),
-            ),
+    return TextFormField(
+      obscureText: isHidden,
+      keyboardType: TextInputType.visiblePassword,
+      decoration: InputDecoration(
+        labelText: widget.labelText,
+        hintText: widget.hintText,
+        focusedBorder: defautlBorder,
+        errorBorder: defautlBorder,
+        focusedErrorBorder: defautlBorder,
+        enabledBorder: defautlBorder,
+        disabledBorder: defautlBorder,
+        suffixIcon: Padding(
+          padding: const EdgeInsetsDirectional.only(end: 16.0),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(23.0),
+            onTap: () {
+              log('Pressionado');
+              setState(() {
+                isHidden = !isHidden;
+              });
+            },
+            child: Icon(isHidden ? Icons.visibility_off : Icons.visibility),
           ),
         ),
       ),
