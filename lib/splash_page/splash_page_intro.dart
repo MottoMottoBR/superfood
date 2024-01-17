@@ -19,7 +19,7 @@ class _SplashPageIntroState extends State<SplashPageIntro>
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
 
-    Future.delayed(Duration(seconds: 2), (){
+    Future.delayed(const Duration(seconds: 3), (){
     Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => const HomePge(),));
 
     });
@@ -39,14 +39,16 @@ class _SplashPageIntroState extends State<SplashPageIntro>
         children: [
           Image.asset(
             'lib/assets/imagens/group.png',
-            width: 900,
-            height: 900,
+            height: double.infinity,
+            width: double.infinity,
           ),
           Positioned(
-              right: 90,
-              bottom: 450,
-              child: Image.asset('lib/assets/imagens/panela.png')),
-          Positioned(right: 119, bottom: 400, child: TextStilo.superFood)
+            child: Image.asset(
+              'lib/assets/imagens/panela.png',
+              height: double.infinity,
+              width: double.infinity,
+            ),
+          ),
         ],
       ),
     );

@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Super Food',
       theme: ThemeData(),
-      home:  const RegisterScreen(),
+      home:  const SplashPageIntro(),
     );
   }
 }
