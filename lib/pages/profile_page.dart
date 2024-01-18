@@ -45,6 +45,7 @@ class ProfileEdit extends StatelessWidget {
             ),
             SizedBoxfixo(),
             CustomTextField(
+              
               labelText: 'Email',
               hintText: 'email@email.com',
 
