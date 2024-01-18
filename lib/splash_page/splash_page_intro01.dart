@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:superfood/routes/skyp_routers.dart';
 
 import '../styles_patterns/app_colors.dart';
 
@@ -22,22 +23,9 @@ class _SplashPage01State extends State<SplashPage01> {
         child: Column(
           children: [
             const SizedBox(height: 40 ,),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                GestureDetector(
-                onTap: (){
-
-                },
-                  child: Text(
-                    'Skip',
-                    style: GoogleFonts.poppins(
-                        color: AppColors.yellow,
-                        fontSize: 13,
-                        fontWeight: FontWeight.normal),
-                  ),
-                ),
-              ],
+              children: [RotaLoginScreen(texto: 'Skip')],
             ),
             const SizedBox(height: 90),
             Image.asset('lib/assets/imagens/intro1.png'),
