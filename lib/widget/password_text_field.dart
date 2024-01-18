@@ -7,13 +7,14 @@ class PassWordTextField extends StatefulWidget {
   final String labelText;
   final Icon? suffixIcon;
   final bool? obscureText;
+  final FormFieldValidator<String>? validator;
 
   const PassWordTextField({
     super.key,
      this.hintText,
     required this.labelText,
     this.suffixIcon,
-    this.obscureText,
+    this.obscureText, this.validator,
   });
 
   @override
@@ -28,6 +29,7 @@ class _PassWordTextFieldState extends State<PassWordTextField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: widget.validator,
       obscureText: isHidden,
       keyboardType: TextInputType.visiblePassword,
       decoration: InputDecoration(

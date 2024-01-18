@@ -38,9 +38,6 @@ class ProfileEdit extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            
-            Image.asset(name)
-            
             ///Campos a serem Preenchidos
             CustomTextField(
               labelText: 'Nome',
@@ -50,15 +47,19 @@ class ProfileEdit extends StatelessWidget {
             CustomTextField(
               labelText: 'Email',
               hintText: 'email@email.com',
+
             ),
             SizedBoxfixo(),
-            PassWordTextField(
-              labelText: 'Password',
+            Form(
+              child: PassWordTextField(
+                labelText: 'Password',
+                
+              ),
             ),
             SizedBoxfixo(),
             CustomTextField(
               labelText: 'Celular numero',
-              hintText: 'Celular numero',
+              hintText: '( XX ) X XXXX XXXX ',
             ),
             SizedBoxfixo(),
           ],
