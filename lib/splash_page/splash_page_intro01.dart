@@ -2,8 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:superfood/routes/skyp_routers.dart';
 
+import '../routers/skyp_routers.dart';
 import '../styles_patterns/app_colors.dart';
 
 class SplashPage01 extends StatefulWidget {

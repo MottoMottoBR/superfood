@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../routes/skyp_routers.dart';
+import '../routers/skyp_routers.dart';
+
 import '../styles_patterns/app_colors.dart';
 
 class SplashPage03 extends StatelessWidget {

@@ -29,9 +29,10 @@ class _RotaLoginScreenState extends State<RotaLoginScreen> {
           ),
         );
       },
-      child: Text(widget.texto, style: GoogleFonts.poppins(
-        color: AppColors.yellow
-      ),),
+      child: Text(
+        widget.texto,
+        style: GoogleFonts.poppins(color: AppColors.yellow),
+      ),
     );
   }
 }

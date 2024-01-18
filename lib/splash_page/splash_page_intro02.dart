@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../routes/skyp_routers.dart';
+import '../routers/skyp_routers.dart';
 import '../styles_patterns/app_colors.dart';
 
 class SplashPage02 extends StatelessWidget {
@@ -20,7 +19,11 @@ class SplashPage02 extends StatelessWidget {
             ),
             const Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [RotaLoginScreen(texto: 'Skip',)],
+              children: [
+                RotaLoginScreen(
+                  texto: 'Skip',
+                )
+              ],
             ),
             const SizedBox(height: 130),
             Image.asset('lib/assets/imagens/intro2.png'),
