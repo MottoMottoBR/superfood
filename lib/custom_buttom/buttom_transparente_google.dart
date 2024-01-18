@@ -23,20 +23,15 @@ class _ButtomTranparenteState extends State<ButtomTranparenteGoogle> {
           border: Border.all(color: Colors.black, width: 1),
           borderRadius: const BorderRadius.all(Radius.circular(35))),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              const SizedBox(
-                width: 50,
-              ),
-              Image.asset('lib/assets/imagens/icon_google.png')
-            ],
+            children: [Image.asset('lib/assets/imagens/icon_google.png')],
           ),
           Row(
             children: [
               const SizedBox(
-                width: 20,
+                width: 30,
               ),
               Text(
                 widget.Text,

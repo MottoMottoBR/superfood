@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Super Food',
       theme: ThemeData(),
-      home:  const OnboardingController(),
+      home:  const RegisterScreen(),
     );
   }
 }
