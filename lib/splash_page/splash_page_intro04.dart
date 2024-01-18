@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:superfood/pages/home_page.dart';
+import 'package:superfood/pages/login_screen.dart';
 
+import '../custom_buttom/buttom_yellow.dart';
 import '../styles_patterns/app_colors.dart';
 
 class SplashPage04 extends StatelessWidget {
@@ -47,11 +50,33 @@ class SplashPage04 extends StatelessWidget {
               constraints: const BoxConstraints(
                 maxWidth: 350,
               ),
-              child: Text(
-                textAlign: TextAlign.center,
-                'Lorem ipsum dolor sit amet consectetur. Ut cras '
-                'pellentesque diam mauris laoreet donec a eget aliquam. ',
-                style: GoogleFonts.poppins(color: AppColors.black),
+              child: Column(
+                children: [
+                  Text(
+                    textAlign: TextAlign.center,
+                    'Lorem ipsum dolor sit amet consectetur. Ut cras '
+                    'pellentesque diam mauris laoreet donec a eget aliquam. ',
+                    style: GoogleFonts.poppins(color: AppColors.black),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const LoginScreen();
+                          },
+                        ),
+                      );
+                    },
+                    child: const ButtomYellow(
+                      text: 'Continuar',
+                    ),
+                  ),
+                ],
               ),
             ),
           ],

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:superfood/styles_patterns/app_colors.dart';
 
-class HomePge extends StatelessWidget {
-  const HomePge({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
