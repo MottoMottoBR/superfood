@@ -22,6 +22,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: widget.validator,
       //keyboardType: widget.emailType,
       decoration: InputDecoration(
         labelText: widget.labelText,
@@ -31,6 +32,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
         focusedErrorBorder: defaultBorder,
         enabledBorder: defaultBorder,
         disabledBorder: defaultBorder,
+
       ),
     );
   }
