@@ -38,23 +38,20 @@ class ProfileEdit extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ///Campos a serem Preenchidos
+            //Campos a serem Preenchidos
             CustomTextField(
               labelText: 'Nome',
               hintText: 'Seu Nome Completo',
             ),
             SizedBoxfixo(),
             CustomTextField(
-              
               labelText: 'Email',
               hintText: 'email@email.com',
-
             ),
             SizedBoxfixo(),
             Form(
               child: PassWordTextField(
                 labelText: 'Password',
-                
               ),
             ),
             SizedBoxfixo(),

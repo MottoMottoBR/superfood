@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:superfood/pages/home_page.dart';
-import 'package:superfood/styles_patterns/text_styles.dart';
-import 'package:superfood/styles_patterns/app_colors.dart';
 
 class SplashPageIntro extends StatefulWidget {
   const SplashPageIntro({super.key});

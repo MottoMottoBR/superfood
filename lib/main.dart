@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Super Food',
       theme: ThemeData(),
-      home:  const ProfileEdit(),
+      home:  const RegisterScreen(),
     );
   }
 }

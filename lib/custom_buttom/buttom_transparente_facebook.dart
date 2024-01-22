@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ButtomTranparenteFace extends StatefulWidget {
-  final String Text;
+  final String text;
 
   const ButtomTranparenteFace({
     super.key,
-    required this.Text,
+    required this.text,
   });
 
   @override
@@ -37,7 +37,7 @@ class _ButtomTranparenteState extends State<ButtomTranparenteFace> {
                 width: 30,
               ),
               Text(
-                widget.Text,
+                widget.text,
                 style: GoogleFonts.poppins(
                     fontWeight: FontWeight.w300, fontSize: 16),
               ),

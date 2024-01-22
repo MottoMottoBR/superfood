@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:superfood/pages/home_page.dart';
+
 import 'package:superfood/pages/login_screen.dart';
 
 import '../custom_buttom/buttom_yellow.dart';

@@ -1,8 +1,5 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../styles_patterns/app_colors.dart';
 
 class ButtomYellow extends StatefulWidget {
@@ -16,7 +13,7 @@ class ButtomYellow extends StatefulWidget {
 class _LoginButtomState extends State<ButtomYellow> {
   @override
   Widget build(BuildContext context) {
-    final String text;
+
     return Container(
       alignment: Alignment.center,
       height: 50,
