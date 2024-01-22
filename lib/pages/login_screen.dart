@@ -2,6 +2,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:superfood/custom_buttom/buttom_yellow.dart';
+import 'package:superfood/pages/register_screen.dart';
 import 'package:superfood/styles_patterns/text_styles.dart';
 
 
@@ -136,11 +137,23 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: GoogleFonts.poppins(
                         fontSize: 13, fontWeight: FontWeight.normal),
                   ),
-                  Text(
-                    ' Sign up ',
-                    style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 13,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const RegisterScreen();
+                          },
+                        ),
+                      );
+                    },
+                    child: Text(
+                      ' Criar contar ',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 13,
+                      ),
                     ),
                   ),
                 ],

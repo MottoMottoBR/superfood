@@ -4,6 +4,7 @@ import 'package:superfood/splash_page/splash_page_intro01.dart';
 import 'package:superfood/splash_page/splash_page_intro02.dart';
 import 'package:superfood/splash_page/splash_page_intro03.dart';
 import 'package:superfood/splash_page/splash_page_intro04.dart';
+import 'package:superfood/splash_page/welcome_screen.dart';
 
 class OnboardingController extends StatefulWidget {
   const OnboardingController({super.key});
@@ -31,6 +32,7 @@ class _OnboardingControllerState extends State<OnboardingController> {
             SplashPage02(),
             SplashPage03(),
             SplashPage04(),
+            WelcomeScreen(),
           ],
         ),
 
@@ -40,7 +42,7 @@ class _OnboardingControllerState extends State<OnboardingController> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              SmoothPageIndicator(controller: _controller, count: 4),
+              SmoothPageIndicator(controller: _controller, count: 5),
 
             ],
           ),

@@ -111,7 +111,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Already have an account?',
+                        'Ja tem uma conta?',
                         style: GoogleFonts.poppins(
                           fontSize: 13,
                         ),
@@ -128,7 +128,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           );
                         },
                         child: Text(
-                          ' Log in',
+                          ' Conecte-se',
                           style: GoogleFonts.poppins(
                               fontSize: 13, fontWeight: FontWeight.bold),
                         ),
