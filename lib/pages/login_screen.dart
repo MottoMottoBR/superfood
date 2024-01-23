@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:superfood/custom_buttom/buttom_yellow.dart';
 import 'package:superfood/styles_patterns/text_styles.dart';
 
-
 import '../custom_buttom/buttom_transparente_facebook.dart';
 import '../custom_buttom/buttom_transparente_google.dart';
 import '../widget/custom_text_field.dart';
