@@ -2,6 +2,8 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:superfood/pages/pages_controller/register_controller.dart';
+import 'package:superfood/pages/pages_controller/register_state.dart';
 import 'package:superfood/utils/validator.dart';
 import '../custom_buttom/buttom_transparente_facebook.dart';
 import '../custom_buttom/buttom_transparente_google.dart';
@@ -21,6 +23,26 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   final _formKey = GlobalKey<FormState>();
   final _passwordController = TextEditingController();
+  final _controller = RegisterController();
+
+  @override
+  void dispose() {
+    _passwordController.dispose();
+    super.dispose();
+  }
+
+  @override
+  void initState() {
+    _controller.addListener(() {
+      if(_controller.state is RegisterLoadingState){
+        showDialog(context: context, builder: (context) => const Center(
+          child: CircularProgressIndicator(),
+        ));
+      }
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,7 +84,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       final valid = _formKey.currentState != null &&
                           _formKey.currentState!.validate();
                       if (valid) {
-                        log('Continuar Login');
+                        log(_controller.doRegister.toString());
                       } else {
                         log('Erro Ao logar');
                       }
