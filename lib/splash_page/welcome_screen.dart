@@ -15,14 +15,14 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.whiteBackground,
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(8),
         child: SingleChildScrollView(
           child: Column(
             children: [
               //Espacamento Inicial em referencia o AppBar
-              const SizedBox(height: 50),
+              const SizedBox(height: 30),
               Image.asset('lib/assets/imagens/group7.png'),
-              const SizedBox(height: 80),
+              const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

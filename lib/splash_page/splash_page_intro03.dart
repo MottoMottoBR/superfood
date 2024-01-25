@@ -13,7 +13,7 @@ class SplashPage03 extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.whiteBackground,
       body: Padding(
-        padding: const EdgeInsets.all(30.0),
+        padding: const EdgeInsets.all(7.0),
         child: Column(
           children: [
             const SizedBox(
@@ -27,7 +27,7 @@ class SplashPage03 extends StatelessWidget {
             Image.asset('lib/assets/imagens/intro3.png'),
             const SizedBox(height: 80),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+
               children: [
                 Text(
                   'Find Nearby Restaurants',
