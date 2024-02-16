@@ -72,6 +72,15 @@ flutter:
      - lib/assets/imagens/intro4.png
      - lib/assets/imagens/icon_google.png
      - lib/assets/imagens/icon_facebook.png
+     - lib/assets/imagens/Briefcase.png
+     - lib/assets/imagens/trabalhador.png
+     - lib/assets/imagens/icecream1.png
+     - lib/assets/imagens/meat_1.png
+     - lib/assets/imagens/pizza1.png
+     - lib/assets/imagens/burger1.png
+     - lib/assets/imagens/view-3d-burger.png
+     - lib/assets/imagens/delicious-pizza-indoors1.png
+     - lib/assets/imagens/tacos-arrangement.png
 
 
 

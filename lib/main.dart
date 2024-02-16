@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:superfood/pages/home_page.dart';
 import 'package:superfood/pages/profile_page.dart';
 import 'package:superfood/pages/register_screen.dart';
 import 'package:superfood/splash_page/onboarding_controller.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Super Food',
       theme: ThemeData(),
-      home:  const RegisterScreen(),
+      home:  const HomePage(),
     );
   }
 }

@@ -25,16 +25,14 @@ class _ButtomTranparenteState extends State<ButtomTranparenteFace> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          const SizedBox(width: 45,),
           Row(
-            children: [
-              const SizedBox(),
-              Image.asset('lib/assets/imagens/icon_facebook.png'),
-            ],
+            children: [Image.asset('lib/assets/imagens/icon_facebook.png')],
           ),
           Row(
             children: [
               const SizedBox(
-                width: 30,
+                width: 20,
               ),
               Text(
                 widget.text,

@@ -15,7 +15,9 @@ class RegisterController extends ChangeNotifier {
   Future<bool> doRegister() async {
     _changeStats(RegisterLoadingState());
     await Future.delayed(const Duration(seconds: 2));
-    print('Usuario Logado');
+    if (kDebugMode) {
+      print('Usuario Logado');
+    }
     _changeStats(RegisterSucessState());
     return true;
   }

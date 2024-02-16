@@ -25,18 +25,23 @@ class _ButtomTranparenteState extends State<ButtomTranparenteGoogle> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          const SizedBox(width: 23,),
           Row(
-            children: [Image.asset('lib/assets/imagens/icon_google.png')],
+            children: [
+
+              Image.asset('lib/assets/imagens/icon_google.png')],
           ),
           Row(
             children: [
               const SizedBox(
-                width: 30,
+                width: 20,
               ),
-              Text(
-                widget.text,
-                style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w300, fontSize: 16),
+              Center(
+                child: Text(
+                  widget.text,
+                  style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w300, fontSize: 16),
+                ),
               ),
             ],
           ),

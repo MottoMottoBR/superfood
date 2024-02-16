@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:superfood/pages/login_screen.dart';
 
 class SplashPageIntro extends StatefulWidget {
   const SplashPageIntro({super.key});
@@ -13,13 +14,13 @@ class _SplashPageIntroState extends State<SplashPageIntro>
   @override
   void initState() {
     super.initState();
-    // SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
-    //
-    // Future.delayed(const Duration(seconds: 3), () {
-    //   Navigator.of(context).pushReplacement(MaterialPageRoute(
-    //     builder: (_) => const HomePge(),
-    //   ));
-    // });
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
+
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(
+        builder: (_) => const LoginScreen(),
+      ));
+    });
   }
 
   @override
