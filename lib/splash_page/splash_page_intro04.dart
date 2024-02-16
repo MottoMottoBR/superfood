@@ -61,21 +61,21 @@ class SplashPage04 extends StatelessWidget {
                   const SizedBox(
                     height: 30,
                   ),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return const LoginScreen();
-                          },
-                        ),
-                      );
-                    },
-                    child: const ButtomYellow(
-                      text: 'Continuar',
-                    ),
-                  ),
+                  // GestureDetector(
+                  //   onTap: () {
+                  //     Navigator.push(
+                  //       context,
+                  //       MaterialPageRoute(
+                  //         builder: (context) {
+                  //           return const LoginScreen();
+                  //         },
+                  //       ),
+                  //     );
+                  //   },
+                  //   child: const ButtomYellow(
+                  //     text: 'Continuar',
+                  //   ),
+                  // ),
                 ],
               ),
             ),

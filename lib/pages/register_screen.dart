@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:superfood/pages/pages_controller/register_controller.dart';
 import 'package:superfood/pages/pages_controller/register_state.dart';
+import 'package:superfood/pages/pages_controller/sign_up_controller.dart';
+import 'package:superfood/pages/pages_controller/sign_up_state.dart';
 import 'package:superfood/utils/validator.dart';
 import '../custom_buttom/buttom_transparente_facebook.dart';
 import '../custom_buttom/buttom_transparente_google.dart';
@@ -23,7 +25,7 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   final _formKey = GlobalKey<FormState>();
   final _passwordController = TextEditingController();
-  final _controller = RegisterController();
+  final _controller = SignUpController();
 
   @override
   void dispose() {
@@ -33,14 +35,23 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   @override
   void initState() {
+    super.initState();
     _controller.addListener(() {
-      if(_controller.state is RegisterLoadingState){
-        showDialog(context: context, builder: (context) => const Center(
-          child: CircularProgressIndicator(),
-        ));
+      if (_controller.state is SignUpLoadingState) {
+        showDialog(
+            context: context,
+            builder: (context) => const Center(
+                  child: CircularProgressIndicator(),
+                ));
+      }
+      if (_controller.state is SignUpSucessState) {
+        Navigator.pop(context);
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const LoginScreen()),
+        );
       }
     });
-    super.initState();
   }
 
   @override
@@ -84,7 +95,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       final valid = _formKey.currentState != null &&
                           _formKey.currentState!.validate();
                       if (valid) {
-                        log(_controller.doRegister.toString());
+                        _controller.doSignUp();
                       } else {
                         log('Erro Ao logar');
                       }
@@ -133,7 +144,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Already have an account?',
+                        'Ja tem uma conta?',
                         style: GoogleFonts.poppins(
                           fontSize: 13,
                         ),
@@ -150,7 +161,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           );
                         },
                         child: Text(
-                          ' Log in',
+                          ' Conecte-se',
                           style: GoogleFonts.poppins(
                               fontSize: 13, fontWeight: FontWeight.bold),
                         ),
