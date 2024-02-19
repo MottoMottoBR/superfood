@@ -31,6 +31,7 @@ class _PassWordTextFieldState extends State<PassWordTextField> {
       OutlineInputBorder(borderRadius: BorderRadius.circular(40.0));
 
   String? _helperText;
+
   @override
   void initState() {
     super.initState();

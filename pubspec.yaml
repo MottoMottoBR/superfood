@@ -80,7 +80,12 @@ flutter:
      - lib/assets/imagens/burger1.png
      - lib/assets/imagens/view-3d-burger.png
      - lib/assets/imagens/delicious-pizza-indoors1.png
-     - lib/assets/imagens/tacos-arrangement.png
+     - lib/assets/imagens/tacos1.png
+     - lib/assets/imagens/hamburg.png
+     - lib/assets/imagens/pizzasuprema.png
+     - lib/assets/imagens/ramen.png
+     - lib/assets/imagens/bolo.png
+     - lib/assets/imagens/frango.png
 
 
 
