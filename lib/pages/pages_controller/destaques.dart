@@ -20,30 +20,50 @@ class DestaquePrincipal extends StatefulWidget {
 class _DestaquePrincipalState extends State<DestaquePrincipal> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Stack(
+      // alignment: Alignment.center,
+      clipBehavior: Clip.none,
       children: [
-        Stack(
-          // alignment: Alignment.center,
-          clipBehavior: Clip.none,
-          children: [
-            Container(
-              height: 133,
-              width: 150,
-              decoration: BoxDecoration(
-                color: AppColors.greySearch,
-                borderRadius: BorderRadius.circular(10),
+        Container(
+          height: 123,
+          width: 140,
+          decoration: BoxDecoration(
+            color: AppColors.greySearch,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Text(
+                widget.titulo,
+                style: GoogleFonts.poppins(
+                    fontSize: 16, fontWeight: FontWeight.w600),
               ),
-            ),
-            Positioned(
-              bottom: -10,
-              //bottom: -40,
-
-              child: widget.imgURL,
-            ),
-          ],
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    r' $ ',
+                    style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w600, color: AppColors.yellow),
+                  ),
+                  Text(
+                    widget.preco,
+                    style: GoogleFonts.poppins(fontWeight: FontWeight.w500),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              )
+            ],
+          ),
         ),
-        const SizedBox(
-          height: 50,
+        Positioned(
+          top: -50,
+          width: 143,
+          height: 108.61,
+          child: widget.imgURL,
         ),
       ],
     );
