@@ -34,7 +34,6 @@ class _TopPromoState extends State<TopPromo> {
             urlImagem:
                 Image.asset('lib/assets/imagens/delicious-pizza-indoors1.png'),
           ),
-
           FeaturedFood(
             titlePromoBanner: r'30% off(Usando $10)',
             titleNameProduto: r'Tacos Supreme',
