@@ -4,7 +4,6 @@ import 'package:superfood/itens_menu/menu_topo.dart';
 import 'package:superfood/itens_menu/promo_topo.dart';
 import '../itens_menu/destaques_menu.dart';
 import '../styles_patterns/app_colors.dart';
-import 'pages_controller/destaques.dart';
 import '../widget/search_text_field.dart';
 
 class HomePage extends StatefulWidget {
@@ -34,7 +33,6 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'Entregar agora',
@@ -65,6 +63,7 @@ class _HomePageState extends State<HomePage> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(90),
                         ),
+                        //
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [

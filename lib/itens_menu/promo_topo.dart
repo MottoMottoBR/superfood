@@ -15,6 +15,7 @@ class _TopPromoState extends State<TopPromo> {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           //Menu Item em Destaque
           FeaturedFood(
