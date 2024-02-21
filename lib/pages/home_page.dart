@@ -30,6 +30,7 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(
                   height: 10,
                 ),
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -44,8 +45,7 @@ class _HomePageState extends State<HomePage> {
                             Text(
                               'Meu endereço 01',
                               style: GoogleFonts.poppins(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w500),
+                                  fontSize: 14, fontWeight: FontWeight.w500),
                             ),
                             const Icon(Icons.arrow_drop_down)
                           ],
@@ -67,8 +67,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         //
                         child: Row(
-                          mainAxisAlignment:
-                              MainAxisAlignment.spaceAround,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Container(
                               width: 37,
@@ -80,8 +79,7 @@ class _HomePageState extends State<HomePage> {
                               child: Image.asset(
                                   'lib/assets/imagens/Briefcase.png'),
                             ),
-                            Image.asset(
-                                'lib/assets/imagens/trabalhador.png'),
+                            Image.asset('lib/assets/imagens/trabalhador.png'),
                           ],
                         ),
                       ),
@@ -155,8 +153,6 @@ class _HomePageState extends State<HomePage> {
                   height: 10,
                 ),
                 const DestaquesMenu(),
-
-
               ],
             ),
           ),
