@@ -14,15 +14,15 @@ class FeaturedFood extends StatefulWidget {
   //Preçodo produto em destaque
   final String titlePrecoDoProduto;
   //Avaliação / nota do produto.
-  final String Nota;
+  final String nota;
   final Icon;
 
-  FeaturedFood({
+  const FeaturedFood({
     super.key,
     required this.titlePromoBanner,
     required this.titleNameProduto,
     required this.titlePrecoDoProduto,
-    required this.Nota,
+    required this.nota,
     required this.urlImagem,
     this.Icon,
   });
@@ -79,7 +79,7 @@ class _FeaturedFoodState extends State<FeaturedFood> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
                     color: AppColors.yellow),
-                child: Text(widget.Nota),
+                child: Text(widget.nota),
               ),
             ),
           ],
