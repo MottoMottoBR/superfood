@@ -48,7 +48,6 @@ class _DestaquesMenuState extends State<DestaquesMenu> {
                 'lib/assets/imagens/frango.png',
               ),
             ),
-
           ],
         ),
       ),

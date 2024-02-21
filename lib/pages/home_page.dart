@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Container(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(1),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -155,7 +155,7 @@ class _HomePageState extends State<HomePage> {
                   height: 10,
                 ),
                 const DestaquesMenu(),
-                const DestaquesMenu()
+
 
               ],
             ),
