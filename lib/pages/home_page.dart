@@ -4,7 +4,6 @@ import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:superfood/itens_menu/menu_topo.dart';
 import 'package:superfood/itens_menu/promo_topo.dart';
-import 'package:superfood/pages/pages_controller/destaques.dart';
 import '../itens_menu/destaques_menu.dart';
 import '../styles_patterns/app_colors.dart';
 import '../widget/search_text_field.dart';
