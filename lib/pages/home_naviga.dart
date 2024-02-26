@@ -32,6 +32,7 @@ class _HomeNavigaState extends State<HomeNaviga> {
 
   @override
   Widget build(BuildContext context) {
+    const String simboloSelecionado = '⬤';
     return Scaffold(
       body: PageView(
         controller: paginaControle,
@@ -44,6 +45,8 @@ class _HomeNavigaState extends State<HomeNaviga> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.amber,
+        //unselectedItemColor: AppColors.backGroundColor,
         currentIndex: paginaAtual,
         items: const [
           BottomNavigationBarItem(
@@ -51,31 +54,31 @@ class _HomeNavigaState extends State<HomeNaviga> {
                 Icons.home,
                 color: AppColors.black,
               ),
-              label: 'kkkk'),
+              label: simboloSelecionado),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.search,
                 color: AppColors.black,
               ),
-              label: ''),
+              label: simboloSelecionado),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.shopping_bag_outlined,
                 color: AppColors.black,
               ),
-              label: ''),
+              label: simboloSelecionado),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.favorite,
                 color: AppColors.black,
               ),
-              label: ''),
+              label: simboloSelecionado),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,
                 color: AppColors.black,
               ),
-              label: ''),
+              label: simboloSelecionado),
         ],
         onTap: (pagina) {
           paginaControle.animateToPage(pagina,
