@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:superfood/pages/home_page.dart';
 import 'package:superfood/pages/pages_controller/carrinho_page.dart';
 import 'package:superfood/pages/pages_controller/favoritos_page.dart';
-import 'package:superfood/pages/pages_controller/perfil_page.dart';
+
 import 'package:superfood/pages/pages_controller/pesquisa_page.dart';
 import 'package:superfood/styles_patterns/app_colors.dart';
-
-import 'dart:ui' as ui;
 
 class HomeNaviga extends StatefulWidget {
   const HomeNaviga({super.key});
