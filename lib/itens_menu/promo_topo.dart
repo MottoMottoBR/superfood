@@ -32,15 +32,18 @@ class _TopPromoState extends State<TopPromo> {
             titleNameProduto: 'Pizza Suprema',
             titlePrecoDoProduto: r'$2.99 Taxa de entrega Gratis . 15-30 min',
             nota: '3.9',
-            urlImagem:
-                Image.asset('lib/assets/imagens/delicious-pizza-indoors1.png'),
+            urlImagem: Image.asset(
+              'lib/assets/imagens/delicious-pizza-indoors1.png',
+            ),
           ),
           FeaturedFood(
             titlePromoBanner: r'30% off(Usando $10)',
             titleNameProduto: r'Tacos Supreme',
             titlePrecoDoProduto: r'$2.99 Taxa de entrega Gratis . 15-30 min',
             nota: '4.9',
-            urlImagem: Image.asset('lib/assets/imagens/tacos1.png'),
+            urlImagem: Image.asset(
+              'lib/assets/imagens/tacos1.png',
+            ),
           ),
         ],
       ),
