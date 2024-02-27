@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:superfood/pages/home_page.dart';
 import 'package:superfood/pages/pages_controller/carrinho_page.dart';
 import 'package:superfood/pages/pages_controller/favoritos_page.dart';
-
 import 'package:superfood/pages/pages_controller/pesquisa_page.dart';
 import 'package:superfood/styles_patterns/app_colors.dart';
 
@@ -20,7 +19,6 @@ class _HomeNavigaState extends State<HomeNaviga> {
   @override
   void initState() {
     paginaControle = PageController(initialPage: paginaAtual);
-
     super.initState();
   }
 
@@ -47,17 +45,16 @@ class _HomeNavigaState extends State<HomeNaviga> {
       bottomNavigationBar: Container(
         clipBehavior: Clip.hardEdge,
         decoration: BoxDecoration(
-            shape: BoxShape.rectangle,
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all()),
+          //  shape: BoxShape.rectangle,
+          borderRadius: BorderRadius.circular(8),
+          // border: Border.all(),
+        ),
         child: BottomNavigationBar(
-          backgroundColor: AppColors.orange,
           selectedItemColor: Colors.amber,
           unselectedItemColor: Colors.transparent,
           currentIndex: paginaAtual,
           items: const [
             BottomNavigationBarItem(
-                backgroundColor: AppColors.orange,
                 icon: Icon(
                   Icons.home,
                   color: AppColors.black,
@@ -91,7 +88,7 @@ class _HomeNavigaState extends State<HomeNaviga> {
           onTap: (pagina) {
             paginaControle.animateToPage(pagina,
                 duration: const Duration(milliseconds: 400),
-                curve: Curves.ease);
+                curve: Curves.decelerate);
           },
         ),
       ),
