@@ -45,9 +45,8 @@ class _HomeNavigaState extends State<HomeNaviga> {
       bottomNavigationBar: Container(
         clipBehavior: Clip.hardEdge,
         decoration: BoxDecoration(
-          //  shape: BoxShape.rectangle,
           borderRadius: BorderRadius.circular(8),
-          // border: Border.all(),
+          border: Border.all(),
         ),
         child: BottomNavigationBar(
           selectedItemColor: Colors.amber,
