@@ -1,16 +1,9 @@
-# superfood
+Desenvolvimento de Layout em Flutter para Aplicativo de Entrega de Hambúrgueres
 
-A new Flutter project.
+**Introdução:** O objetivo deste estudo de caso é apresentar o desenvolvimento de um layout para um aplicativo de entrega de hambúrgueres, utilizando a tecnologia Flutter. Este projeto tem como foco principal o aprendizado prático do desenvolvimento de interfaces de usuário em Flutter, sem ênfase em funcionalidades avançadas de backend ou lógica de negócios complexa.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+**Metodologia:** Utilizando o framework Flutter, foram desenvolvidas diversas telas que compõem o fluxo básico de um aplicativo de entrega de hambúrgueres. As telas foram projetadas para proporcionar uma experiência agradável ao usuário, com elementos visuais atrativos e uma navegação fluída.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[![d976eb9941fad4f19f6030b4d7ada126.jpeg](https://imgtr.ee/images/2024/03/19/d976eb9941fad4f19f6030b4d7ada126.jpeg)](https://imgtr.ee/image/IOGVcT)
