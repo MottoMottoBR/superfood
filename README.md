@@ -6,4 +6,4 @@ Desenvolvimento de Layout em Flutter para Aplicativo de Entrega de Hambúrgueres
 
 **Metodologia:** Utilizando o framework Flutter, foram desenvolvidas diversas telas que compõem o fluxo básico de um aplicativo de entrega de hambúrgueres. As telas foram projetadas para proporcionar uma experiência agradável ao usuário, com elementos visuais atrativos e uma navegação fluída.
 
-[![d976eb9941fad4f19f6030b4d7ada126.jpeg](https://imgtr.ee/images/2024/03/19/d976eb9941fad4f19f6030b4d7ada126.jpeg)](https://imgtr.ee/image/IOGVcT)
+[![d976eb9941fad4f19f6030b4d7ada126.md.jpeg](https://imgtr.ee/images/2024/03/19/d976eb9941fad4f19f6030b4d7ada126.md.jpeg)](https://imgtr.ee/image/IOGVcT)
